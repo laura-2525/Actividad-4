@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <title>Play Now</title>
+  <link rel="stylesheet" href="lib/gallery.theme.css">
+  <link rel="stylesheet" href="lib/gallery.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/estilo.css">
+  
+ 
+ <style type="text/css">
+       
+    @font-face {
+        font-family: Piedra-Regular;
+        src: url(bootstrap/fonts/Piedra-Regular.ttf) format("truetype");
+    }
+    h1 {
+       
+      font-family: Piedra-Regular;
+
+    }
+    
+ </style>
+ 
+  </head>
+
+<body>
+
+  <center><h1>PLAY NOW</h1></center>
+   <div class="gallery autoplay items-3">
+
+     <div id="item-1" class="control-operator"></div>
+     <div id="item-2" class="control-operator"></div>
+     <div id="item-3" class="control-operator"></div> 
+     <div id="item-4" class="control-operator"></div> 
+     
+ 
+
+     <figure class="item">
+      <img src="imagenes/img1.png"  alt="imagen" width="100%">
+     </figure>
+
+     <figure class="item">
+      <img src="imagenes/max.jpg"  alt="imagen" width="100%">
+    </figure>
+
+    <figure class="item">
+      <img src="imagenes/call.png"   alt="imagen" width="100%">
+    </figure>
+
+    <figure class="item">
+      <img src="imagenes/for.png"  alt="imagen" width="100%">
+    </figure>
+
+    
+    <div class="controls">
+        <a href="#item-1" class="control-button"></a>
+        <a href="#item-2" class="control-button"></a>
+        <a href="#item-3" class="control-button"></a>
+        <a href="#item-4" class="control-button"></a>
+       
+    </div> 
+   </div>
+   
+    
+
+   <nav class="navbar navbar-inverse">
+    
+    <ul class="nav navbar-nav">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#contenido">Contenido</a></li>
+    <li><a href="#login">Login</a></li>
+    <li><a href="#formulario">Formulario</a></li>
+    <li><a href="#redes">Redes </a></li> 
+    
+  </ul>
+</nav>
+ 
+
+
+<div id="inicio" class="section" >
+  
+  <center><h1>Esta es mi primera pagina web </h1></center>
+  <center><p>Esta pagina web es un ejemplo del proyecto que vamos a ejecutar</p></center>
+ 
+</div>
+
+  <div id="contenido" class="section" >
+  <center><p>Esto es un ejemplo del CONTENIDO DE LA PAGINA </p></center>
+  
+  <div class="">
+   <center> <img src="imagenes/Cry.jpg" class="imagen" width="70%"/></center>
+  </div>
+  </div>
+
+
+
+
+
+
+  <div id="login" class="section">
+    <form name="login" action="/RecursoEnSevidor">
+      <fieldset>  
+       </style>
+      <h1 class="h3 mb-3 font-weight-normal">INICIE SESION</h1>
+      <label for="inputEmail" class="sr-only">Correo </label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email " required autofocus>
+      <label for="inputPassword" class="sr-only">Contraseña</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="contraseña" required>
+     
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Recordar
+        </label>
+      </div>
+
+      <button type="button" class="btn btn-primary">Aceptar</button>
+      <p class="mt-5 mb-3 text-muted"></p>
+    </fieldset>
+    </form>
+  </div>
+
+
+
+
+
+
+    
+  
+  <div id="formulario" class="section">
+  
+    <form 
+    name="forma"
+    action="/RecursoEnServidor"
+    method="post"
+    onsubmit="return validarForma(this);">
+
+    <h1>Formulario</h1>
+    <div class="etiquetas">
+    <div class="etiqueta1"> 
+    <h4>Nombre Completo</h4>
+    </div>
+
+    <div class="mergin-text">
+    <br><input type="text" id="usuario" placeholder="usuario" onfocus="this.select();"/> 
+    </div>
+    </div>
+
+  
+  <div class="etiquetas">
+  <div class="etiqueta1">
+   <h4>Dirección de Correo</h4>
+  </div>
+
+  <div class="mergin-text">
+  <br/><input type="email" id="email"  placeholder="Email" required> 
+  </div>
+  </div>
+
+  <div class="etiquetas">
+    <div class="etiqueta1">
+   <h4>Teléfono</h4>
+  </div>
+
+   <div class="mergin-text">
+   <br/><input type="number" id="celular"  placeholder="celular" required> 
+  </div>
+  </div>
+
+  <div class="etiquetas">
+    <div class="etiqueta1">
+      <h4>Mensaje</h4>
+    </div>
+  
+   <div class="mergin-text">
+   <br/><input type="mensa" id="mansaje"  placeholder="Mensaje" required> 
+  </div>
+  </div>
+
+  <div class="etiquetas">
+    <div class="etiqueta1">
+      <h4>Tecnologia</h4>
+    </div>
+   
+    <div class="margin-text">
+      <br/>
+      Java
+      <input type="checkbox" name="tecnoligia" value="java"/>
+      &nbsp;&nbsp;&nbsp; Net
+      <input type="checkbox" name="tecnoligia" value="net"/>
+      &nbsp;&nbsp;&nbsp; Php
+      <input type="checkbox" name="tecnoligia" value="php"/>   
+    </div>
+    </div>
+<br>
+    <div class="etiquetas">
+      <div class="etiqueta1">
+    <imput type="reset" value="limpiar" class="default">
+      <button type="button" class="btn btn-primary">Enviar</button>
+    </div>
+    </div>
+
+  
+  
+  </form>
+  </div>
+
+
+  <div id="redes" class="section">
+     
+    <footer>
+	   <center> <a href="http://Facebook.com" target="_blank"><img src="imagenes/facebook.png" alt="imagen" ></a>
+	    <a href="http://instagram.com" target="_blank"><img src="imagenes/insta.png" alt="imagen"  ></a></center>
+       
+</footer>
+    
+    <div>
+
+
+<script src="lib/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/curso.js"></script>
+
+
+  </body>
+</html>
